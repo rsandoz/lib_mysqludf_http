@@ -10,7 +10,11 @@ gcc lib_mysqludf_http.c -shared -o C:\xampp\mysql\lib\plugin\lib_mysqludf_http.d
 After DLL is in plugins, run lib_mysqludf_http.sql
 
 Test with:
+
 SELECT http_get('http://www.google.com');
+
 SELECT http_post('<url>', '<data>');
+
 SELECT http_put('<url>', '<data>');
+
 SELECT http_delete('<url>');
